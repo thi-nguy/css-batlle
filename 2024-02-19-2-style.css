@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: #f49fc7;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  bottom: 0;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border: 250px solid transparent;
+  border-inline: 200px solid transparent;
+  border-bottom-color: #810070;
+  position: absolute;
+  bottom: 0;
+}
+.light {
+  border-bottom-color: #f49fc7;
+}
+.middle {
+  z-index: 1;
+  bottom: -50px;
+}
+.down {
+  z-index: 2;
+  bottom: -125px;
+}
