@@ -4,30 +4,32 @@
   padding: 0;
 }
 
+:root {
+  --background-color: #f49fc7;
+  --violet: #810070;
+}
+
 .wrapper {
-  background: #f49fc7;
+  background: var(--background-color);
   width: 400px;
   height: 300px;
   position: relative;
-  bottom: 0;
 }
 .triangle {
   width: 0;
   height: 0;
   border: 250px solid transparent;
   border-inline: 200px solid transparent;
-  border-bottom-color: #810070;
+  border-bottom-color: var(--violet);
   position: absolute;
   bottom: 0;
 }
-.light {
-  border-bottom-color: #f49fc7;
+.background-color {
+  border-bottom-color: var(--background-color);
 }
 .middle {
-  z-index: 1;
   bottom: -50px;
 }
 .down {
-  z-index: 2;
   bottom: -125px;
 }
